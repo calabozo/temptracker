@@ -1,2 +1,4 @@
 w1thermsensor
 pandas
+flask
+plotly

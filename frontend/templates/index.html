@@ -1,0 +1,14 @@
+
+<div class="content">
+    Temperatura actual:
+    {% for row in temps %}
+    <p>sonda: {{ row.id }}  temperatura: {{row.temp}}</p>
+{% endfor %}
+</div>
+<div id="graph"></div>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script type="text/javascript">
+    var graphs = {{data | safe}};
+    Plotly.plot('graph',graphs,{});        
+</script>

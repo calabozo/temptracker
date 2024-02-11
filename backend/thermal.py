@@ -11,4 +11,6 @@ def get_temperature():
          dict_sensor={'id':sensor.id, 'temp':sensor.get_temperature(), 'datetime': int(time())}
          out.append(dict_sensor)
     return out
+
+
     
